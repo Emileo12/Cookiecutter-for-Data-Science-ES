@@ -3,6 +3,7 @@
 
 **Autor:** {{ cookiecutter.project_author_name }}  
 **Descripción:** {{ cookiecutter.project_description }}
+**Versión:** {{ cookie.cutter.project_version }}
 
 ![Logotipo del Proyecto](https://cdn-icons-png.flaticon.com/512/2103/2103607.png)  <!-- Puedes reemplazar esta URL con el logotipo de tu proyecto -->
 
@@ -126,4 +127,3 @@ Las contribuciones son lo que hacen que la comunidad de código abierto sea un l
 
 Tu Nombre - [@tu_twitter](https://twitter.com/tu_twitter) - tu_email@example.com
 
-Enlace al Proyecto: [https://github.com/tu_usuario/{{ cookiecutter.project_slug }}](https://github.com/tu_usuario/{{ cookiecutter.project_slug }})

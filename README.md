@@ -34,6 +34,10 @@ En el directorio en el que quieras guardar tu proyecto generado escribe esto en 
 ```bash
 cookiecutter https://github.com/Emileo12/Cookiecutter-for-Data-Science-ES 
 ```
+o
+```bash
+python3 -m cookiecutter https://github.com/Emileo12/Cookiecutter-for-Data-Science-ES 
+```
 Luego le aparecera para dar el nombre a su proyecto, nombre del autor, una breve descripcion, opciones de que dependencias desea instalar, version de python. 
 Tambien puede dejarlo por defecto al hacer Enter.
 
