@@ -10,9 +10,11 @@ MESSAGE_COLOR = "\x1b[34m"
 RESET_ALL = "\x1b[0m"
 
 if project_slug.startswith("x"):
-   print(f"{ERROR_COLOR}ERROR: {project_slug=} is not a valid name for this template.{RESET_ALL}")
+   print(f"{ERROR_COLOR}ERROR: {project_slug=} no es un nombre valido para el proyecto.\n No empiezes con la letra 'x'.{RESET_ALL}")
    sys.exit(1)
 
-print(f"{MESSAGE_COLOR}Let\'s do it! You\'re going to create something awesome!")
-print(f"Creating project at {os.getcwd()}{RESET_ALL}")
+print(f"{MESSAGE_COLOR}")
+print("Genial! Estas a punto de crear algo increible")
+print(f"Creando el proyecto en  {os.getcwd()}")
+print(f"{RESET_ALL}")
 
