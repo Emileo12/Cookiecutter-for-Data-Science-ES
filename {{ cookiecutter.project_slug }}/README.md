@@ -1,5 +1,5 @@
 
-# {{ cookiecutter.project_title }} 🎉
+# {{ cookiecutter.project_name }} 🎉
 
 **Autor:** {{ cookiecutter.project_author_name }}  
 **Descripción:** {{ cookiecutter.project_description }}
@@ -11,7 +11,7 @@
 
 ## Tabla de Contenidos 📚
 
-- [{{ cookiecutter.project\_title }} 🎉](#-cookiecutterproject_title--)
+- [{{ cookiecutter.project\_name }} 🎉](#-cookiecutterproject_name--)
   - [Tabla de Contenidos 📚](#tabla-de-contenidos-)
   - [Acerca del Proyecto 📝](#acerca-del-proyecto-)
     - [Construido con 🛠️](#construido-con-️)
