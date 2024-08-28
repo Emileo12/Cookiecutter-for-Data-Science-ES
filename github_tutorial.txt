@@ -1,8 +1,0 @@
-Revisar este repositorio para mas informacion: https://github.com/platzi/curso-entorno-avanzado-ds
-
-Cookiecutter es una libreria que nos ayuda a usar plantillas personalizadas para crear proyectos
-de ciencia de datos de manera estandar, facil y rapido. 
-1) Para inicializarlo debemos ir a la terminal
-2) escribir python3 -m cookiecutter y la plantilla
-"python3 -m cookiecutter https://github.com/platzi/curso-entorno-avanzado-ds --checkout cookiecutter-personal-platzi"
-3) Nos pedira el nombre del proyecto, el slug, nombre y email y una breve descripcion

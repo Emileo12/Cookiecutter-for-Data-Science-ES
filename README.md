@@ -32,24 +32,25 @@ conda install -c conda-forge cookiecutter
 En el directorio en el que quieras guardar tu proyecto generado escribe esto en la terminal:
 
 ```bash
-cookiecutter https://github.com/platzi/curso-entorno-avanzado-ds --checkout cookiecutter-personal-platzi
+cookiecutter https://github.com/Emileo12/Cookiecutter-for-Data-Science-ES 
 ```
+Luego le aparecera para dar el nombre a su proyecto, nombre del autor, una breve descripcion, opciones de que dependencias desea instalar, version de python. 
+Tambien puede dejarlo por defecto al hacer Enter.
 
 ## Estructura de directorios y archivos resultantes
 
     {{ cookiecutter.project_slug }}
-        ├── data
-        │   ├── processed      <- The final, canonical data sets for modeling.
-        │   └── raw            <- The original, immutable data dump.
-        │
-        ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-        │                         the creator's initials, and a short `-` delimited description, e.g.
-        │                         `1.0-jvelezmagic-initial-data-exploration`.
-        │
-        ├── .gitignore         <- Files to ignore by `git`.
-        │
-        ├── environment.yml    <- The requirements file for reproducing the analysis environment.
-        │
-        └── README.md          <- The top-level README for developers using this project.
+      
+        ├── data/               # Archivos de datos
+          ├──processed          # Datos finales ya procesados
+          └──raw                # Datos en crudo
+        ├── notebooks/          # Notebooks de Jupyter
+        ├── scripts/            # Scripts de Python
+        ├── results/            # Resultados de salida
+        ├── environment.yml     # Configuración del ambiente Conda
+        ├── requirements.txt    # Dependencias de Python
+        ├── README.md           # Descripción general del proyecto
+        └── main.py             # Script principal de ejecución
+        
 
 ---
