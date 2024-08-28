@@ -1,0 +1,36 @@
+# conda env create --file environment.yml
+name: {{ cookiecutter.project_slug }}
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  {% if cookiecutter.project_packages in ["All", "Python"] -%}
+  - fs
+  - jupyter
+  - jupyterlab
+  - pathlib
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pyprojroot
+  {% endif -%}
+  
+  {% if cookiecutter.project_packages in ["All", "R"] -%}
+  - r-base
+  - r-tidyverse
+  - r-rmarkdown
+  - r-shiny
+  - r-rcpp
+  - r-sqlite
+  - r-caret
+  {% endif -%}
+
+  - pip
+  - python={{ cookiecutter.python_version }}
+  - pip:
+    {% if cookiecutter.project_packages in ["All", "Python"] -%}
+    - pyhere
+    {% endif -%}
