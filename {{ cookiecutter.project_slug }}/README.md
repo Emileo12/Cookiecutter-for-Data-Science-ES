@@ -11,7 +11,7 @@
 
 ## Tabla de Contenidos 📚
 
-- [{{ cookiecutter.project\_name }} 🎉](#-cookiecutterproject_name--)
+- Proyecto
   - [Tabla de Contenidos 📚](#tabla-de-contenidos-)
   - [Acerca del Proyecto 📝](#acerca-del-proyecto-)
     - [Construido con 🛠️](#construido-con-️)
