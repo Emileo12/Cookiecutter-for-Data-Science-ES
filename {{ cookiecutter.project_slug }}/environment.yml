@@ -5,7 +5,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  {% if cookiecutter.project_packages in ["All", "Python"] -%}
+  {% if cookiecutter.project_packages in ["Todo", "Python"] -%}
   - fs
   - jupyter
   - jupyterlab
@@ -18,7 +18,7 @@ dependencies:
   - pyprojroot
   {% endif -%}
   
-  {% if cookiecutter.project_packages in ["All", "R"] -%}
+  {% if cookiecutter.project_packages in ["Todo", "R"] -%}
   - r-base
   - r-tidyverse
   - r-rmarkdown
@@ -31,6 +31,6 @@ dependencies:
   - pip
   - python={{ cookiecutter.python_version }}
   - pip:
-    {% if cookiecutter.project_packages in ["All", "Python"] -%}
+    {% if cookiecutter.project_packages in ["Todo", "Python"] -%}
     - pyhere
     {% endif -%}

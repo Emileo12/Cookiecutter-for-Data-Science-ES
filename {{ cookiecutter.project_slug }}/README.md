@@ -3,7 +3,7 @@
 
 **Autor:** {{ cookiecutter.project_author_name }}  
 **Descripción:** {{ cookiecutter.project_description }}
-**Versión:** {{ cookie.cutter.project_version }}
+**Versión:** {{ cookiecutter.project_version }}
 
 ![Logotipo del Proyecto](https://cdn-icons-png.flaticon.com/512/2103/2103607.png)  <!-- Puedes reemplazar esta URL con el logotipo de tu proyecto -->
 
