@@ -1,8 +1,8 @@
 # conda env create --file environment.yml
 name: {{ cookiecutter.project_slug }}
 channels:
-  - anaconda
   - conda-forge
+  - anaconda
   - defaults
 dependencies:
   {% if cookiecutter.project_packages in ["Todo", "Python"] -%}
@@ -24,7 +24,7 @@ dependencies:
   - r-rmarkdown
   - r-shiny
   - r-rcpp
-  - r-sqlite
+  - r-rsqlite
   - r-caret
   {% endif -%}
 

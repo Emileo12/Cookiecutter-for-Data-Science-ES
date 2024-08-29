@@ -13,8 +13,7 @@ if project_slug.startswith("x"):
    print(f"{ERROR_COLOR}ERROR: {project_slug=} no es un nombre valido para el proyecto.\n No empiezes con la letra 'x'.{RESET_ALL}")
    sys.exit(1)
 
-print(f"{MESSAGE_COLOR}")
+
 print("Genial! Estas a punto de crear algo increible")
 print(f"Creando el proyecto en  {os.getcwd()}")
-print(f"{RESET_ALL}")
 

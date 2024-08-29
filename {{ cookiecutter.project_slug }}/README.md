@@ -53,7 +53,7 @@ Asegúrate de tener lo siguiente instalado:
 1. **Clona el repositorio:**
 
    ```sh
-   git clone https://github.com/tu_usuario/{{ cookiecutter.project_slug }}.git
+   git clone https://github.com/tu_usuario/{{ cookiecutter.project_slug }}.git #Recordar cambiar
    ```
 
 2. **Navega al directorio del proyecto:**
@@ -66,16 +66,10 @@ Asegúrate de tener lo siguiente instalado:
 
    - Si usas Conda:
      ```sh
-     conda env create --file environment.yml
+     conda env create --file environment.yml # Ya tiene el nombre del proyecto
      conda activate {{ cookiecutter.project_slug }}
      ```
 
-   - Si usas `venv`:
-     ```sh
-     python3 -m venv env
-     source env/bin/activate  # En Windows usa `env\Scripts\activate`
-     pip install -r requirements.txt
-     ```
 
 ---
 

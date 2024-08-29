@@ -1,5 +1,4 @@
-import os
-import sys
+
 import subprocess
 
 
@@ -12,6 +11,7 @@ print(f"{MESSAGE_COLOR}Casi listo!")
 print(f"Inicializando repositorio de git...{RESET_ALL}")
 
 subprocess.call(['git', 'init'])
+subprocess.call(['git', 'branch','-m', 'main'])
 subprocess.call(['git', 'add', '*'])
 subprocess.call(['git', 'commit', '-m', 'Commit inicial'])
 
