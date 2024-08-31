@@ -1,123 +1,158 @@
 
 # {{ cookiecutter.project_name }} 🎉
 
-**Autor:** {{ cookiecutter.project_author_name }}  
-**Descripción:** {{ cookiecutter.project_description }}
-**Versión:** {{ cookiecutter.project_version }}
+**Author:** {{ cookiecutter.project_author_name }}  
+**Description:** {{ cookiecutter.project_description }}
 
-![Logotipo del Proyecto](https://cdn-icons-png.flaticon.com/512/2103/2103607.png)  <!-- Puedes reemplazar esta URL con el logotipo de tu proyecto -->
+**Version:** {{ cookiecutter.project_version }}
 
----
-
-## Tabla de Contenidos 📚
-
-- Proyecto
-  - [Tabla de Contenidos 📚](#tabla-de-contenidos-)
-  - [Acerca del Proyecto 📝](#acerca-del-proyecto-)
-    - [Construido con 🛠️](#construido-con-️)
-  - [Cómo Empezar 🚀](#cómo-empezar-)
-    - [Prerequisitos ✅](#prerequisitos-)
-    - [Instalación ⚙️](#instalación-️)
-  - [Uso 📊](#uso-)
-    - [Ejemplo](#ejemplo)
-  - [Estructura del Proyecto 📂](#estructura-del-proyecto-)
-  - [Contribuciones 🤝](#contribuciones-)
-  - [Contacto 📬](#contacto-)
+![Project Logo](https://cdn-icons-png.flaticon.com/512/2103/2103607.png)  <!-- You can replace this URL with your project's logo -->
 
 ---
 
-## Acerca del Proyecto 📝
+## Table of Contents 📚
+
+- Project
+  - [Table of Contents 📚](#table-of-contents-)
+  - [About the Project 📝](#about-the-project-)
+    - [Built With 🛠️](#built-with-️)
+  - [Getting Started 🚀](#getting-started-)
+    - [Prerequisites ✅](#prerequisites-)
+    - [Installation ⚙️](#installation-️)
+  - [Usage 📊](#usage-)
+    - [Example](#example)
+  - [Project Structure 📂](#project-structure-)
+  - [Contributions 🤝](#contributions-)
+  - [Contact 📬](#contact-)
+
+---
+
+## About the Project 📝
 
 {{ cookiecutter.project_description }}
 
-### Construido con 🛠️
+### Built With 🛠️
 - Python {{ cookiecutter.python_version }}
-- R (si aplica)
-- [Lista de otros frameworks/librerías/herramientas principales utilizadas]
+- R (if applicable)
+- [List of other main frameworks/libraries/tools used]
 
 ---
 
-## Cómo Empezar 🚀
+## Getting Started 🚀
 
-Para obtener una copia local y ponerla en funcionamiento, sigue estos pasos.
+To get a local copy up and running, follow these steps.
 
-### Prerequisitos ✅
+### Prerequisites ✅
 
-Asegúrate de tener lo siguiente instalado:
-- Python {{ cookiecutter.python_version }} o posterior
-- Conda (si usas ambientes Conda)
-- R (si usas paquetes de R)
+Make sure you have the following installed:
+- Python {{ cookiecutter.python_version }} or later
+- Conda (if using Conda environments)
+- R (if using R packages)
 
-### Instalación ⚙️
+### Installation ⚙️
 
-1. **Clona el repositorio:**
+1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/tu_usuario/{{ cookiecutter.project_slug }}.git #Recordar cambiar
+   git clone https://github.com/your_username/{{ cookiecutter.project_slug }}.git #Remember to change
    ```
 
-2. **Navega al directorio del proyecto:**
+2. **Navigate to the project directory:**
 
    ```sh
    cd {{ cookiecutter.project_slug }}
    ```
 
-3. **Configura el ambiente:**
+3. **Set up the environment:**
 
-   - Si usas Conda:
+   - If using Conda:
      ```sh
-     conda env create --file environment.yml # Ya tiene el nombre del proyecto
+     conda env create --file environment.yml # It already has the project name
      conda activate {{ cookiecutter.project_slug }}
      ```
 
-
 ---
 
-## Uso 📊
+## Usage 📊
 
-Aquí te mostramos cómo ejecutar el proyecto:
+Here is how to run the project:
 
 ```sh
-python main.py  # Ajusta este comando según el punto de entrada de tu proyecto
+python main.py  # Adjust this command according to your project's entry point
 ```
+You can also check the reports folder to see results of interest for the public.
 
-### Ejemplo
-Puedes incluir fragmentos de código o capturas de pantalla para demostrar cómo funciona el proyecto.
-
----
-
-## Estructura del Proyecto 📂
-
-Una breve descripción de la estructura del proyecto:
-
-```plaintext
-├── data/               # Archivos de datos
-  ├──processed          # Datos finales ya procesados
-  └──raw                # Datos en crudo
-├── notebooks/          # Notebooks de Jupyter
-├── scripts/            # Scripts de Python
-├── results/            # Resultados de salida
-├── environment.yml     # Configuración del ambiente Conda
-├── requirements.txt    # Dependencias de Python
-├── README.md           # Descripción general del proyecto
-└── main.py             # Script principal de ejecución
-```
+### Example
+You can include code snippets or screenshots to demonstrate how the project works.
 
 ---
 
-## Contribuciones 🤝
+## Project Structure 📂
 
-Las contribuciones son lo que hacen que la comunidad de código abierto sea un lugar tan increíble para aprender, inspirar y crear. Cualquier contribución que hagas será **muy apreciada**.
+A brief description of the project structure:
 
-1. Haz un Fork del Proyecto
-2. Crea tu Rama Feature (`git checkout -b feature/AmazingFeature`)
-3. Realiza tus Cambios (`git commit -m 'Añadir una nueva característica'`)
-4. Empuja la Rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+    ├── LICENSE
+    ├── tasks.py           <- Invoke with commands like `notebook`.
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── install.md         <- Detailed instructions to set up this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries.
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures         <- Generated graphics and figures to be used in reporting.
+    │
+    ├── environment.yml    <- The requirements file for reproducing the analysis environment.
+    │
+    ├── .here              <- File that will stop the search if none of the other criteria
+    │                         apply when searching head of project.
+    │
+    ├── setup.py           <- Makes project pip installable (pip install -e .)
+    │                         so {{ cookiecutter.project_module_name }} can be imported.
+    │
+    └── {{ cookiecutter.project_module_name }}               <- Source code for use in this project.
+        ├── __init__.py    <- Makes {{ cookiecutter.project_module_name }} a Python module.
+        │
+        ├── data           <- Scripts to download or generate data.
+        │   └── make_dataset.py
+        │
+        ├── features       <- Scripts to turn raw data into features for modeling.
+        │   └── build_features.py
+        │
+        ├── models         <- Scripts to train models and then use trained models to make
+        │   │                 predictions.
+        │   ├── predict_model.py
+        │   └── train_model.py
+        │
+        ├── utils          <- Scripts to help with common tasks.
+            └── paths.py   <- Helper functions to relative file referencing across project.
+        │
+        └── visualization  <- Scripts to create exploratory and results oriented visualizations.
+            └── visualize.py
+
+---
+## Contributions 🤝
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## Contacto 📬
+## Contact 📬
 
-Tu Nombre - [@tu_twitter](https://twitter.com/tu_twitter) - tu_email@example.com
-
+{{ cookiecutter.project_author_name }} - [@your_linkedin](https://linkedin.com/your_linkedin) - {{ cookiecutter.project_author_email }}

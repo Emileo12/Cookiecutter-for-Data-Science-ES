@@ -1,9 +1,12 @@
 {
-    "project_name": "Cookiecutter Personal",
+    "project_name": "Cookiecutter for Data Science",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "project_description": "Tu descripcion",
-    "project_author_name": "Tu nombre",
-    "project_packages": ["Todo", "Python", "R", "Minimo"],
+    "project_module_name": "{{cookiecutter.project_slug}}",
+    "project_author_name": "Your name or alias",
+    "project_author_email": "Your email",
+    "project_description": "A short description of the projects",
+    "project_open_source_license": ["No license file","MIT","BSD-3-Clause"],
+    "project_packages": ["All", "Python", "R", "Minimal"],
     "python_version": "3.11",
     "project_version": "0.1.0"
 }

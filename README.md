@@ -1,60 +1,94 @@
-# Cookiecuter Personal
-![Logotipo del Proyecto](https://repository-images.githubusercontent.com/11407242/86598c80-80ab-11ea-95a2-df46cca01e67)
-### Como utilizar y crear plantillas personalizadas con cookiecutter.
 
-Al inicializar esta plantilla se creara un sistema de archivos estandarizados que le falicitara a usted en empezar un proyecto de ciencia de datos. 
+# Cookiecutter for Data
+![Project Logo](https://repository-images.githubusercontent.com/11407242/86598c80-80ab-11ea-95a2-df46cca01e67)
 
-Se inicializara un repositorio de git en local de manera automatica para que pueda trabajar en un sistema de versiones. Esencial para el trabajo en equipo y mayormente para su publicacion en la pagina de internet github.com.
+## How to Use and Create Custom Templates with Cookiecutter
 
-Ademas de crear un ambiente virtual para la reproducibilidad del proyecto.
+When initializing this template, a standardized file system will be created to help you start a data science project.
 
+A local Git repository will be automatically initialized so you can work in a version control system, which is essential for teamwork and especially for publishing on the internet, like on github.com.
+Additionally, a virtual environment will be created for project reproducibility.
 
+We hope you forget about the small details in your project and with this repository, you can focus on what's important in your project!
 
-# Requirimientos
+# Requirements
 
 - [Anaconda](https://www.anaconda.com/download/) >= 4.x
 - [git](https://git-scm.com/) >= 2.x
 - [Cookiecutter Python package](http://cookiecutter.readthedocs.org/en/latest/installation.html) >= 1.4.0:
-    Esto puede ser instalado con `pip` o `conda` dependiendo cómo tú manejas tus paquetes de Python:
+    This can be installed with `pip` or `conda` depending on how you manage your Python packages:
 
-``` bash
+```bash
 pip install cookiecutter
 ```
 
-o
+or
 
-``` bash
+```bash
 conda install -c conda-forge cookiecutter
 ```
 
-## Crear un nuevo proyecto
+## Create a New Project
 
-En el directorio en el que quieras guardar tu proyecto generado escribe esto en la terminal:
+In the directory where you want to save your generated project, type this in the terminal:
 
 ```bash
-cookiecutter https://github.com/Emileo12/Cookiecutter-for-Data-Science-ES 
+cookiecutter https://github.com/Emileo12/Cookiecutter-for-Data-Science-ES
 ```
-o
+or
 ```bash
-python3 -m cookiecutter https://github.com/Emileo12/Cookiecutter-for-Data-Science-ES 
+python3 -m cookiecutter https://github.com/Emileo12/Cookiecutter-for-Data-Science-ES
 ```
-Luego le aparecera para dar el nombre a su proyecto, nombre del autor, una breve descripcion, opciones de que dependencias desea instalar, version de python. 
-Tambien puede dejarlo por defecto al hacer Enter.
 
-## Estructura de directorios y archivos resultantes
+Then, you will be prompted to enter your project's name, author name, a brief description, options for which dependencies you want to install, and the Python version. You can also leave it as default by pressing Enter.
 
-    {{ cookiecutter.project_slug }}
-      
-        ├── data/               # Archivos de datos
-          ├──processed          # Datos finales ya procesados
-          └──raw                # Datos en crudo
-        ├── notebooks/          # Notebooks de Jupyter
-        ├── scripts/            # Scripts de Python
-        ├── results/            # Resultados de salida
-        ├── environment.yml     # Configuración del ambiente Conda
-        ├── requirements.txt    # Dependencias de Python
-        ├── README.md           # Descripción general del proyecto
-        └── main.py             # Script principal de ejecución
-        
+## Resulting Directory and File Structure
 
----
+    ├── LICENSE
+    ├── tasks.py           <- Invoke with commands like `notebook`.
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── install.md         <- Detailed instructions to set up this project.
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── models             <- Trained and serialized models, model predictions, or model summaries.
+    │
+    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │                         the creator's initials, and a short `-` delimited description, e.g.
+    │                         `1.0-jqp-initial-data-exploration`.
+    │
+    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
+    │
+    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │   └── figures         <- Generated graphics and figures to be used in reporting.
+    │
+    ├── environment.yml    <- The requirements file for reproducing the analysis environment.
+    │
+    ├── .here              <- File that will stop the search if none of the other criteria
+    │                         apply when searching head of project.
+    │
+    ├── setup.py           <- Makes project pip installable (pip install -e .)
+    │                         so {{ cookiecutter.project_module_name }} can be imported.
+    │
+    └── {{ cookiecutter.project_module_name }}               <- Source code for use in this project.
+        ├── __init__.py    <- Makes {{ cookiecutter.project_module_name }} a Python module.
+        │
+        ├── data           <- Scripts to download or generate data.
+        │   └── make_dataset.py
+        │
+        ├── features       <- Scripts to turn raw data into features for modeling.
+        │   └── build_features.py
+        │
+        ├── models         <- Scripts to train models and then use trained models to make
+        │   │                 predictions.
+        │   ├── predict_model.py
+        │   └── train_model.py
+        │
+        ├── utils          <- Scripts to help with common tasks.
+            └── paths.py   <- Helper functions to relative file referencing across project.
+        │
+        └── visualization  <- Scripts to create exploratory and results oriented visualizations.
+            └── visualize.py

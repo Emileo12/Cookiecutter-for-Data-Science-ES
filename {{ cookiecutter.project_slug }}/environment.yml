@@ -5,7 +5,10 @@ channels:
   - anaconda
   - defaults
 dependencies:
-  {% if cookiecutter.project_packages in ["Todo", "Python"] -%}
+  - invoke
+  - black
+  - nbdime
+  {% if cookiecutter.project_packages in ["All", "Python"] -%}
   - fs
   - jupyter
   - jupyterlab
@@ -16,9 +19,11 @@ dependencies:
   - matplotlib
   - seaborn
   - pyprojroot
+  - plotly
+  - pyjanitor
   {% endif -%}
   
-  {% if cookiecutter.project_packages in ["Todo", "R"] -%}
+  {% if cookiecutter.project_packages in ["All", "R"] -%}
   - r-base
   - r-tidyverse
   - r-rmarkdown
@@ -31,6 +36,6 @@ dependencies:
   - pip
   - python={{ cookiecutter.python_version }}
   - pip:
-    {% if cookiecutter.project_packages in ["Todo", "Python"] -%}
+    {% if cookiecutter.project_packages in ["All", "Python"] -%}
     - pyhere
     {% endif -%}
